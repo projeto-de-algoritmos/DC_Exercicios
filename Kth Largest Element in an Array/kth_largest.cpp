@@ -51,7 +51,7 @@ public:
 
   int kthLargest(int left, int right, int k)
   {
-    if (left < right || !k || k < (right - left))
+    if (left < right || k < (right - left))
     {
       // for improve performance
       makeMedianSwap(left, right);
