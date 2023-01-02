@@ -49,23 +49,19 @@ public:
     cmpAndSwap(arr[right], arr[mid]); // Swap right with mid
   }
 
-  void quickSort(int left, int right, int k)
+  int kthLargest(int left, int right, int k)
   {
-    int pivot;
-    if (left >= right)
-      return;
+    if (left < right || !k || k < (right - left))
+    {
+      // for improve performance
+      makeMedianSwap(left, right);
 
-    // for improve performance
-    makeMedianSwap(left, right);
-
-    pivot = partition(left, right);
-
-    // Sort until k
-    if (pivot >= k)
-      return
-
-          quickSort(left, pivot - 1, k);
-    quickSort(pivot + 1, right, k);
+      int pivot = partition(left, right);
+      if (pivot - left == k - 1) return arr[pivot];
+      // Sort until k
+      return pivot >= k ? kthLargest(left, pivot - 1, k) : kthLargest(pivot + 1, right, k);
+    }
+    return arr[k - 1];
   }
   int findKthLargest(vector<int> &nums, int k)
   {
@@ -73,8 +69,6 @@ public:
     int size = nums.size();
     arr = &nums[0];
 
-    quickSort(0, size - 1, k);
-
-    return arr[k - 1];
+    return kthLargest(0, size - 1, k);
   }
 };
