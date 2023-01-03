@@ -18,4 +18,5 @@ Exercícios de juízes online sobre Dividir e Conquistar resolvidos.
 [Carteiro](./carteiro/carteiro.pdf)  
 
 
-### **Linguagem**: C++, JavaScript, Python<br>
+### Linguagem: C++, JavaScript, Python<br>
+### Apresentação: [Vídeo](presentationDC.mp4)
