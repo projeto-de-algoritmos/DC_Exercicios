@@ -10,22 +10,12 @@
 | 20/0021541 | Karla Chaiane da Silva Feliciano    |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Exercícios de juízes online sobre Dividir e Conquistar resolvidos.
 
-## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
-
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+[Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)  
+[Longest Nice String](https://leetcode.com/problems/kth-largest-element-in-an-array/)  
+[Recursive Digit Sum](https://www.hackerrank.com/challenges/recursive-digit-sum/problem)  
+[Carteiro](./carteiro/carteiro.pdf)  
 
 
-
-
+### **Linguagem**: C++, JavaScript, Python<br>
